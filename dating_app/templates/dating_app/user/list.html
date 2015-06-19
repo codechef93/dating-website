@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Dating</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div class="w3-container w3-teal">
+        <h3>Registered Users</h3>
+    </div>
+
+    {% for user in users %}
+    <div class="w3-container w3-row w3-margin w3-border">
+        <div class="w3-container w3-cell">
+            <img src="{{ user.profile.photo_url }}" style="height:100px">
+        </div>
+        <div class="w3-container w3-cell w3-margin">
+            <br>
+            {{ user.profile.name }}<br>
+            <small>
+                {{ user.profile.gender2 }} {{ user.profile.age }}<br>
+                <i>{{ user.profile.interests|default:"" }}</i><br>
+            </small>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+
+</html>

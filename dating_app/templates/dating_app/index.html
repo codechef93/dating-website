@@ -1,0 +1,33 @@
+<!DOCTYPE html>  {% load static %}
+<html>
+<head>
+    <title>Dating</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2 { font-family: "Raleway", sans-serif }
+        body, html {height: 100%}
+        p {line-height: 2}
+
+        .bgImage2 {
+            background-image: url("{% static 'dating_app/couple2.jpg' %}");
+            background-position: center;
+            background-size: cover;
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Modified from https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_wedding&stacked=v -->
+    <header class="w3-display-container w3-wide bgImage2 w3-grayscale-min">
+        <div class="w3-display-middle w3-center w3-text-green">
+            <h1 class="w3-jumbo">In Python</h1>
+            <h2>Together we build a dating website</h2>
+            <h2><b>16.06.2021</b></h2>
+        </div>
+    </header>
+</body>
+</html>
